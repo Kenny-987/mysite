@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+body p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.container {
+  height: auto;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 80px;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  height: auto;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  height: auto;
+  width: 100%;
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  height: auto;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.sub {
+  width: 65%;
+  margin: auto;
+}
+.image {
+  margin-top: 45px;
+  width: 100%;
+}
+.content {
+  margin-top: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content p {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.btn,
+.btn1,
+.btn2 {
+  width: 70%;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+button {
+  font-size: 15px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 15px;
+  color: hsl(0, 0%, 95%);
+  padding: 6px;
+  width: 60%;
+}
+button:hover {
+  background-color: hsl(0, 0%, 95%);
+}
+.btn button:hover {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn1 button:hover {
+  color: hsl(184, 100%, 22%);
+}
+.btn2 button:hover {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 495px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .sub {
+    width: 75%;
+    margin: auto;
+  }
+  .content p {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .btn,
+  .btn1,
+  .btn2 {
+    margin-top: 35px;
+  }
+  button {
+    font-size: 18px;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 15px;
+    color: hsl(0, 0%, 95%);
+    padding: 8px;
+    width: 60%;
+  }
+  .sedan {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .luxury {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
